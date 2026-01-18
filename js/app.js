@@ -1,7 +1,6 @@
 // Select all option cards
 const options = document.querySelectorAll(".option");
 
-
 // Add click event to each option
 options.forEach(option => {
   option.addEventListener("click", () => {
