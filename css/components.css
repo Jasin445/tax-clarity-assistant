@@ -1,0 +1,143 @@
+/* =========================
+   Page Container
+========================= */
+.container {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+   Step & Progress
+========================= */
+.step {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 60%;
+  height: 100%;
+  background: #0f9d6a;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* =========================
+   Titles
+========================= */
+h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   Options
+========================= */
+.option {
+  width: 100%;             /* full width */
+  display: flex;
+  align-items: flex-start; /* align radio + text properly */
+}
+
+
+
+.option:hover {
+  border-color: #0f9d6a;
+}
+
+.option.selected {
+  background: #e6f6ef;
+  border-color: #0f9d6a;
+}
+
+/* Radio Button */
+.radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+  margin-top: 3px;
+  position: relative;
+}
+
+.option.selected .radio {
+  border-color: #0f9d6a;
+}
+
+.option.selected .radio::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #0f9d6a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* =========================
+   Option Text
+========================= */
+.option-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.option-desc {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* =========================
+   Helper Text
+========================= */
+.helper {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 16px;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
