@@ -1,0 +1,42 @@
+/* =========================
+   Header Layout
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* =========================
+   Page Layout
+========================= */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;          /* stack children vertically */
+  flex-direction: column; /* important for vertical layout */
+  gap: 16px;              /* spacing between elements */
+  width: 100%;
+  max-width: 720px;
+  margin: 40px auto;
+}
+
+/* =========================
+   Responsive Layout
+========================= */
+@media (max-width: 600px) {
+  .header {
+    padding: 16px;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 24px;
+  }
+}

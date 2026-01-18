@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Clarity Assistant</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
+
 <body>
-    <h1>Tax Clarity Assistant</h1>
+<!-- Header -->
+    <header class="header">
+        <div class="logo">
+            🏛️ Tax Clarity
+        </div>
+
+        <button class="profile-btn">My Profile</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Step info -->
+        <div class="step">Step 3 of 3</div>
+
+        <!-- Progress bar -->
+        <div class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="progress-text">60%</div>
+        </div>
+
+        <!-- Title -->
+        <h2>Is your business registered?</h2>
+
+        <p class="subtitle">
+            Your registration status with the Corporate Affairs Commission (CAC)
+            determines your specific tax obligations under the 2026 Tax Clarity Act.
+        </p>
+
+        <!-- Options -->
+        <div class="option selected" data-option="registered">
+            <div class="radio"></div>
+            <div class="option-content">
+                <div class="option-title">Yes, it’s registered</div>
+                <div class="option-desc">
+                    I have a CAC registration number (RC, BN, or IT).
+                </div>
+            </div>
+        </div>
+
+        <div class="option" data-option="not-registered">
+            <div class="radio"></div>
+            <div class="option-content">
+                <div class="option-title">No, it’s not registered</div>
+                <div class="option-desc">
+                    I operate as an individual freelancer or unregistered entity.
+                </div>
+            </div>
+        </div>
+
+        <div class="option" data-option="unsure">
+            <div class="radio"></div>
+            <div class="option-content">
+                <div class="option-title">I’m not sure</div>
+                <div class="option-desc">
+                    I need help identifying my legal status or structure.
+                </div>
+            </div>
+        </div>
+
+        <!-- Helper text -->
+        <p class="helper">
+            ℹ️ Why are we asking? Registered businesses may qualify for specific tax
+            credits or simplified filing structures introduced in the 2026 reform.
+        </p>
+
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+
+
 </body>
+
 </html>

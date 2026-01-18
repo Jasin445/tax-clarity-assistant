@@ -1,0 +1,211 @@
+/* =========================
+   Root Variables
+========================= */
+:root {
+  --green: #0f9d6a;
+  --green-light: #e6f6ef;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #f9fafb;
+}
+
+/* =========================
+   Global Styles
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* =========================
+   Header
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.profile-btn {
+  background: var(--green);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   Main Container
+========================= */
+.container {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+   Step & Progress
+========================= */
+.step {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 60%;
+  height: 100%;
+  background: var(--green);
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Title & Subtitle
+========================= */
+h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* =========================
+   Options
+========================= */
+.option {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.option:hover {
+  border-color: var(--green);
+}
+
+.option.selected {
+  background: var(--green-light);
+  border-color: var(--green);
+}
+
+/* Radio */
+.radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 3px;
+}
+
+.option.selected .radio {
+  border-color: var(--green);
+}
+
+.option.selected .radio::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Option Text */
+.option-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.option-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Helper Text
+========================= */
+.helper {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  .header {
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
