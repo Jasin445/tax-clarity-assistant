@@ -1,0 +1,143 @@
+/* =========================
+   Card Container
+========================= */
+.card {
+  max-width: 420px;
+  width: 100%;
+  margin: 60px 20px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   Loader / Spinner
+========================= */
+.spinner {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  border: 6px solid var(--border);
+  border-top-color: var(--green);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   Title & Subtitle
+========================= */
+.card h2 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* =========================
+   Progress
+========================= */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 60%;
+  height: 100%;
+  background: var(--green);
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Description
+========================= */
+.note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Steps
+========================= */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.step.done {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.step.pending {
+  background: #f3f4f6;
+  color: var(--text-muted);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   Helper Text
+========================= */
+.small-note {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 480px) {
+  .card {
+    padding: 24px;
+  }
+}
