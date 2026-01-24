@@ -46,3 +46,45 @@
 .last-cards-section {
     margin-top: 20px;
 }
+
+.analysis-card {
+  width: 100%;
+  padding: 45px 64px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.analysis-card h2 {
+  font-size: 26px;
+}
+
+/* =========================
+   Loader / Spinner
+========================= */
+.spinner {
+  width: 124px;
+  height: 124px;
+  margin: 20px auto 29px;
+  border-radius: 50%;
+  border: 10px solid var(--bg-light);
+  border-top-color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+.small-spinner {
+   width: 26px;
+  height: 26px;
+  /* margin: 20px auto 29px; */
+  border-radius: 50%;
+  border: 2px solid var(--bg-light);
+  border-top-color: #b4b4b4;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
