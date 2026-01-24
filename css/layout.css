@@ -1,42 +1,48 @@
-/* =========================
-   Header Layout
-========================= */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+.action-btns {
+  margin-top: 64px;
 }
 
-/* =========================
-   Page Layout
-========================= */
-main {
-  display: flex;
-  justify-content: center;
+.cards {
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    background-color: white;
+    width: 100%;
+    padding: 36px;
+    cursor: pointer;
+    transition: border 0.5s ease;
 }
 
-.container {
-  display: flex;          /* stack children vertically */
-  flex-direction: column; /* important for vertical layout */
-  gap: 16px;              /* spacing between elements */
-  width: 100%;
-  max-width: 720px;
-  margin: 40px auto;
+.cards:hover {
+  border: 1px solid var(--primary)
 }
 
-/* =========================
-   Responsive Layout
-========================= */
-@media (max-width: 600px) {
-  .header {
-    padding: 16px;
-  }
+.cards-section{
+  margin-top: 48px;
+}
 
-  .container {
-    margin: 20px;
-    padding: 24px;
-  }
+.cards-section img {
+    width: 50px;
+    height: 51px;
+    margin-bottom: 24px;
+}
+
+.cards-section h2 {
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cards-section p {
+    color: #575757;
+    font-size: 16px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.last-cards-section {
+    margin-top: 20px;
 }

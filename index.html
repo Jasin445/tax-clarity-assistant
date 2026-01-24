@@ -1,91 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Clarity Assistant</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Clarity | Step 4</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <!-- CSS file -->
-    <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/component.css">
-  <link rel="stylesheet" href="css/layout.css">
-</head>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
 
-<body>
-<!-- Header -->
+  <body>
+    <!-- Header -->
     <header class="header">
-        <div class="logo">
-            🏛️ Tax Clarity
-        </div>
+      <div class="logo">
+        <img class="logo" src="./assets/logo.png" alt="logo" />
+        <p>Tax Clarity</p>
+      </div>
 
-        <button class="profile-btn">My Profile</button>
+      <button class="profile-btn">My Profile</button>
     </header>
 
     <!-- Main Content -->
     <main class="container">
-
-        <!-- Step info -->
-        <div class="step">Step 3 of 3</div>
-
-        <!-- Progress bar -->
-        <div class="progress-wrapper">
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <div class="progress-text">60%</div>
+      <!-- Step info -->
+      <section class="progress-bar">
+        <div class="step-desc">
+          <p>Step 3 0f 3</p>
+          <p>40%</p>
         </div>
 
-        <!-- Title -->
+        <div class="progress-container">
+          <div class="progress-green"></div>
+        </div>
+
+        <p class="step-type">Almost there!, Your registration status is key.</p>
+      </section>
+
+      <!-- Title -->
+      <section class="question-centered">
         <h2>Is your business registered?</h2>
-
         <p class="subtitle">
-            Your registration status with the Corporate Affairs Commission (CAC)
-            determines your specific tax obligations under the 2026 Tax Clarity Act.
+          Your registration status with the Corporate Affairs Commission (CAC)
+          <br />
+          determines your specific tax obligations under the 2026 Tax Clarity
+          Act.
         </p>
+      </section>
 
+      <section class="select-options">
         <!-- Options -->
         <div class="option selected" data-option="registered">
-            <div class="radio"></div>
-            <div class="option-content">
-                <div class="option-title">Yes, it’s registered</div>
-                <div class="option-desc">
-                    I have a CAC registration number (RC, BN, or IT).
-                </div>
+          <div class="radio"></div>
+          <div class="option-content">
+            <div class="option-title">Yes, it’s registered</div>
+            <div class="option-desc">
+              I have a CAC registration number (RC, BN, or IT).
             </div>
+          </div>
         </div>
 
         <div class="option" data-option="not-registered">
-            <div class="radio"></div>
-            <div class="option-content">
-                <div class="option-title">No, it’s not registered</div>
-                <div class="option-desc">
-                    I operate as an individual freelancer or unregistered entity.
-                </div>
+          <div class="radio"></div>
+          <div class="option-content">
+            <div class="option-title">No, it’s not registered</div>
+            <div class="option-desc">
+              I operate as an individual freelancer or unregistered entity.
             </div>
+          </div>
         </div>
 
         <div class="option" data-option="unsure">
-            <div class="radio"></div>
-            <div class="option-content">
-                <div class="option-title">I’m not sure</div>
-                <div class="option-desc">
-                    I need help identifying my legal status or structure.
-                </div>
+          <div class="radio"></div>
+          <div class="option-content">
+            <div class="option-title">I’m not sure</div>
+            <div class="option-desc">
+              I need help identifying my legal status or structure.
             </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Helper text -->
-        <p class="helper">
-            ℹ️ Why are we asking? Registered businesses may qualify for specific tax
-            credits or simplified filing structures introduced in the 2026 reform.
+      <!-- Helper text -->
+      <div class="helper">
+        <img src="./assets/green-info.png" alt="info icon" />
+        <p>
+          <b>Why are we asking?</b> Registered businesses may qualify for
+          specific tax credits or simplified filing structures introduced in the
+          2026 reform.
         </p>
+      </div>
 
+      <div class="action-btns">
+        <button class="continue-btn">Continue</button>
+        <button class="back-btn">Go back</button>
+      </div>
     </main>
 
     <!-- JavaScript file -->
     <script src="app.js"></script>
-
-
-</body>
-
+  </body>
 </html>
