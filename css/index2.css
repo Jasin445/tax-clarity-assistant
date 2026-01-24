@@ -1,0 +1,48 @@
+/* =========================
+   Page Layout
+========================= */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 140px);
+}
+
+/* Content wrapper (optional but clean) */
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   Footer Layout
+========================= */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+  main {
+    min-height: calc(100vh - 120px);
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 12px;
+    text-align: center;
+  }
+}
