@@ -2,12 +2,14 @@
    Root Variables
 ========================= */
 :root {
-  --green: #0f9d6a;
-  --green-light: #e6f6ef;
-  --text-dark: #1f2937;
-  --text-muted: #6b7280;
+  --primary: #008653;
+  --primary-foreground: #EAF6ED;
+  --button-secondary: #E0E0E0;
+  --text-dark: #000000;
+  --text-muted: #575757;
+  --text-accent: #2C2C2C;
   --border: #e5e7eb;
-  --bg: #f9fafb;
+  --bg: #F8F8F8;
 }
 
 /* =========================
@@ -33,7 +35,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
+  padding: 26px 70px;
   background: #ffffff;
   border-bottom: 1px solid var(--border);
 }
@@ -41,19 +43,27 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 18px;
+  gap: 10px;
+  font-size: 24px;
   font-weight: 600;
-  color: var(--green);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .profile-btn {
-  background: var(--green);
+  background: var(--primary);
   color: #ffffff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -65,84 +75,104 @@ body {
    Main Container
 ========================= */
 .container {
-  max-width: 720px;
+  max-width: 846px;
   margin: 40px auto;
-  background: #ffffff;
   padding: 32px;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 /* =========================
    Step & Progress
 ========================= */
-.step {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin-bottom: 6px;
+.step-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
-.progress-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+.step-desc p:first-child {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.progress-bar {
-  flex: 1;
-  height: 6px;
-  background: var(--border);
-  border-radius: 999px;
-  overflow: hidden;
+.step-desc p:nth-child(2) {
+    color:#575757;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.progress {
-  width: 60%;
-  height: 100%;
-  background: var(--green);
+.progress-container {
+    width: 100%;
+    background-color: #DCE5DF;
+    border-radius: 64px;
+    height: 11px;
+    margin-bottom: 24px;
 }
 
-.progress-text {
-  font-size: 13px;
-  color: var(--text-muted);
+.progress-green {
+    width: 257px;
+    height: 11px;
+    background-color: var(--primary);
+    border-radius: 64px;
+}
+
+.step-type {
+    color: var(--text-accent);
+    font-size: 16px;
 }
 
 /* =========================
    Title & Subtitle
 ========================= */
+
+.question-centered{
+  text-align: center;
+  margin-top: 50px;
+}
+
 h2 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 8px;
 }
 
 .subtitle {
   font-size: 14px;
-  color: var(--text-muted);
-  margin-bottom: 24px;
+  color: var(--text-accent);
 }
 
 /* =========================
    Options
 ========================= */
+.select-options{
+  margin-top: 48px;
+}
+
 .option {
   display: flex;
   gap: 14px;
-  padding: 16px;
+  padding: 30px;
+  background-color: white;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 16px;
   cursor: pointer;
   margin-bottom: 14px;
-  transition: border 0.2s ease, background 0.2s ease;
+  transition: border 0.5s ease, background-color 0.2s ease;
 }
 
 .option:hover {
-  border-color: var(--green);
+  border-color: var(--primary);
 }
 
 .option.selected {
-  background: var(--green-light);
-  border-color: var(--green);
+  background: var(--primary-foreground);
+  border-color: var(--primary);
+}
+
+.selected {
+  background: var(--primary-foreground) !important;
+  border-color: var(--primary) !important;
 }
 
 /* Radio */
@@ -156,14 +186,14 @@ h2 {
 }
 
 .option.selected .radio {
-  border-color: var(--green);
+  border-color: var(--primary);
 }
 
 .option.selected .radio::after {
   content: "";
   width: 8px;
   height: 8px;
-  background: var(--green);
+  background: var(--primary);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -180,6 +210,7 @@ h2 {
 
 .option-desc {
   font-size: 13px;
+  font-weight: bold;
   color: var(--text-muted);
 }
 
@@ -189,7 +220,36 @@ h2 {
 .helper {
   font-size: 12px;
   color: var(--text-muted);
-  margin-top: 16px;
+  margin-top: 24px;
+  display: flex;
+  gap: 6px;
+}
+
+.helper img {
+  width: 20px;
+  height: 21px;
+}
+
+.last-section {
+    margin-top: 80px;
+}
+
+.last-section img {
+    width: 24px;
+    height: 24px;
+}
+
+.last-section a {
+    color: #575757;
+    font-size: 14px;
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 18px;
+    justify-content: center;
 }
 
 /* =========================
