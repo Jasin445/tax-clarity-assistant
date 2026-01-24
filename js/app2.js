@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const progressBar = document.querySelector(".progress");
+  const progressBar = document.querySelector(".progress-green");
   const progressText = document.querySelector(".progress-text");
   const steps = document.querySelectorAll(".step");
 
   let progress = 0;
 
-  // Step checkpoints (percentages)
   const checkpoints = [
     { percent: 30, stepIndex: 0 },
     { percent: 60, stepIndex: 1 },
@@ -13,31 +12,32 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const interval = setInterval(() => {
-    progress += 1;
+    progress++;
 
-    // Update progress bar
     progressBar.style.width = `${progress}%`;
     progressText.textContent = `${progress}%`;
 
-    // Update steps
-    checkpoints.forEach(point => {
-      if (progress >= point.percent) {
-        const step = steps[point.stepIndex];
+    checkpoints.forEach(({ percent, stepIndex }) => {
+      if (progress >= percent) {
+        const step = steps[stepIndex];
+        if (!step || step.classList.contains("done")) return;
+
         step.classList.remove("pending");
         step.classList.add("done");
-        step.querySelector(".icon").textContent = "✔";
+
+        const icon = step.firstElementChild;
+        const check = step.children[1];
+
+        if (icon && check) {
+          icon.classList.add("hide");
+          check.classList.remove("hide");
+        }
       }
     });
 
-    // Finish
     if (progress >= 100) {
       clearInterval(interval);
-
-      // Optional: redirect after completion
-      setTimeout(() => {
-        // window.location.href = "result.html";
-        console.log("Analysis complete");
-      }, 800);
+      setTimeout(() => console.log("Analysis complete"), 800);
     }
-  }, 40); // speed control
+  }, 40);
 });

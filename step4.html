@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyzing your responses</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/step4.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       Header
+  ========================= -->
+    <header class="header">
+      <div class="logo">
+        <img class="logo" src="./assets/logo.png" alt="logo" />
+        <p>Tax Clarity</p>
+      </div>
+
+      <button class="profile-btn">My Profile</button>
+    </header>
+
+    <!-- =========================
+       Main Content
+  ========================= -->
+    <main class="container">
+      <section class="analysis-card" aria-live="polite">
+        <!-- Loader -->
+        <div class="spinner" aria-hidden="true"></div>
+
+        <!-- Title -->
+        <h2>
+          Analysing<br />
+          your responses...
+        </h2>
+
+
+        <section>
+          <div class="flex-result">
+            <p class="subtitle">Calculating your result</p>
+            <span class="progress-text">60%</span>
+          </div>
+          
+          <!-- Progress -->
+          <div class="progress-wrapper">
+            <div class="progress-container">
+              <div class="progress-green"></div>
+            </div>
+          </div>
+          
+          <!-- Description -->
+          <p class="note">
+            We’re preparing guidance specific to your situation. <br>
+            his usually takes less than 10 seconds
+          </p>
+        </section>
+
+        <!-- Checklist -->
+        <section class="steps">
+          <div class="step pending ">
+            <div class="small-spinner" aria-hidden="true"></div>
+            <img
+              src="./assets/check-circle.png"
+              height="30px"
+              width="30px"
+              class="success-icon hide"
+              alt="check icon"
+            />
+            <span>Validating business structure</span>
+          </div>
+
+          <div class="step pending ">
+            <div class="small-spinner" aria-hidden="true"></div>
+            <img
+              src="./assets/check-circle.png"
+              height="30px"
+              width="30px"
+              class="success-icon hide"
+              alt="check icon"
+            />
+            <span>Applying 2026 Tax Clarity thresholds</span>
+          </div>
+
+          <div class="step pending ">
+            <div class="small-spinner" aria-hidden="true"></div>
+            <img
+              src="./assets/check-circle.png"
+              height="30px"
+              width="30px"
+              class="success-icon hide"
+              alt="check icon"
+            />
+            <span>Generating final recommendations...</span>
+          </div>
+        </section>
+
+        <!-- Helper -->
+        <i class="small-note">
+          Your data is being  processed securely according to Nigerian tax laws.
+        </i>
+      </section>
+    </main>
+
+    <!-- =========================
+       Footer
+  ========================= -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Refund and return service</a>
+      </div>
+      <p>© 2026 Nigeria Tax Clarity Assistant. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/app2.js"></script>
+  </body>
+</html>
