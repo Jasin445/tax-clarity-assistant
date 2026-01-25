@@ -2,7 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const progressBar = document.querySelector(".progress-green");
   const progressText = document.querySelector(".progress-text");
   const steps = document.querySelectorAll(".step");
+  const step4Btn = document.querySelector("#step-four");
 
+function goTo(url) {
+  window.location.href = url
+}
+  
   let progress = 0;
 
   const checkpoints = [
@@ -34,10 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
-
+    console.log(progress, step4Btn)
     if (progress >= 100) {
       clearInterval(interval);
-      setTimeout(() => console.log("Analysis complete"), 800);
+      setTimeout(() => {
+        console.log("Analysis complete"), 800;
+        goTo("./step5.html");
+      });
     }
   }, 40);
 });

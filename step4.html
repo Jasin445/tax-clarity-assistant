@@ -1,10 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analyzing your responses</title>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <!-- Styles -->
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/step4.css" />
@@ -16,12 +39,14 @@
        Header
   ========================= -->
     <header class="header">
+              <div class="head-wrapper">
       <div class="logo">
-        <img class="logo" src="./assets/logo.png" alt="logo" />
+        <img src="./assets/logo.png" alt="logo" />
         <p>Tax Clarity</p>
       </div>
 
       <button class="profile-btn">My Profile</button>
+      </div>
     </header>
 
     <!-- =========================
@@ -38,30 +63,29 @@
           your responses...
         </h2>
 
-
-        <section>
+        <section id="step-four">
           <div class="flex-result">
             <p class="subtitle">Calculating your result</p>
             <span class="progress-text">60%</span>
           </div>
-          
+
           <!-- Progress -->
           <div class="progress-wrapper">
             <div class="progress-container">
               <div class="progress-green"></div>
             </div>
           </div>
-          
+
           <!-- Description -->
           <p class="note">
-            We’re preparing guidance specific to your situation. <br>
+            We’re preparing guidance specific to your situation. <br />
             his usually takes less than 10 seconds
           </p>
         </section>
 
         <!-- Checklist -->
         <section class="steps">
-          <div class="step pending ">
+          <div class="step pending">
             <div class="small-spinner" aria-hidden="true"></div>
             <img
               src="./assets/check-circle.png"
@@ -73,7 +97,7 @@
             <span>Validating business structure</span>
           </div>
 
-          <div class="step pending ">
+          <div class="step pending">
             <div class="small-spinner" aria-hidden="true"></div>
             <img
               src="./assets/check-circle.png"
@@ -85,7 +109,7 @@
             <span>Applying 2026 Tax Clarity thresholds</span>
           </div>
 
-          <div class="step pending ">
+          <div class="step pending">
             <div class="small-spinner" aria-hidden="true"></div>
             <img
               src="./assets/check-circle.png"
@@ -100,7 +124,7 @@
 
         <!-- Helper -->
         <i class="small-note">
-          Your data is being  processed securely according to Nigerian tax laws.
+          Your data is being processed securely according to Nigerian tax laws.
         </i>
       </section>
     </main>

@@ -1,0 +1,148 @@
+.container {
+  max-width: 1311px;
+  margin-top: 58px;
+  padding: 0;
+}
+
+.container > h2:first-child {
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.action-plan {
+    margin-top: 35px;
+    box-shadow: 0px 8px 24px 0px #00000014;
+    padding: 30px 54px;
+    background-color: white;
+    border-radius: 16px;
+
+}
+
+.action-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.action-number p:first-child {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action-number p {
+    color: #008653B2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.action-info {
+    margin-top: 16px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.check-boxes {
+    box-shadow: 0px 8px 24px 0px #00000014;
+    padding: 70px 54px;
+    margin-top: 46px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.check-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.check-item input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.check-text h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.check-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.info {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.action-buttons {
+    margin: auto;
+    margin-top: 74px;
+    max-width: 846px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.action-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px 0;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--primary);
+    transition: all 0.4s ease;
+}
+
+.action-buttons button:first-child:hover {
+    background-color: #d3d3d3;
+}
+
+.action-buttons button:hover {
+      background-color: #01784a;
+
+}
+
+.action-buttons button:first-child {
+    background-color: #E0E0E0;
+    color: var(--text-muted);
+    font-size: 18px;
+}
+
+.action-buttons img {
+    width: 28px;
+    height: 28px;
+}
+
+footer {
+    margin-top: 57px;
+}

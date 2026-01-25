@@ -7,10 +7,20 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.4s ease;
+
 }
 
 .back-btn {
   margin-top: 24px;
   background-color: var(--button-secondary);
-  color: var(--text-muted)
+  color: var(--text-muted);
+}
+
+.back-btn:hover {
+  background: #d3d3d3;
+}
+
+.continue-btn:hover {
+  background: #01784a;
 }

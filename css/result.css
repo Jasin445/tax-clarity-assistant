@@ -1,0 +1,127 @@
+.container {
+    width: 100%;
+    max-width: 1153px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 60px;
+}
+
+.success-icon-wrapper {
+    border-radius: 50%;
+    background-color: #1DB9541F;
+    width: 156px;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+    margin-top: 45px;
+    width: 100%;
+    max-width: 732px;
+}
+
+.info h2 {
+    font-size: 35px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.info p {
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-size: 18px;
+}
+
+.assessment {
+    box-shadow: 0px 8px 24px 0px #00000014;
+    background-color: white;
+    padding: 31px 67px;
+    border-radius: 16px;
+    margin-top: 44px;
+}
+
+.assessment div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+
+}
+
+.assessment p {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.assessment h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.action-buttons {
+    margin: auto;
+    margin-top: 54px;
+    margin-bottom: 70px;
+    max-width: 846px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.action-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 340px;
+    padding: 25px 0;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--primary);
+    transition: all 0.4s ease;
+}
+
+.action-buttons button:first-child {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.action-buttons button:first-child:hover {
+    background-color: #ececec;
+}
+
+.action-buttons button:hover {
+      background-color: #01784a;
+
+}
+
+.action-buttons img {
+    width: 28px;
+    height: 28px;
+}
+
+.meta-info {
+    margin-top: 120px;
+}
+
+.meta-info p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+    padding: 5px;
+}
