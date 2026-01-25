@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tax Clarity | Step 4</title>
+    <title>Tax Clarity | Step 3</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -34,94 +34,81 @@
     <link rel="stylesheet" href="css/layout.css" />
   </head>
 
-  <body>
+  <body id="landing-page-body">
     <!-- Header -->
     <header class="header">
-      <div class="logo">
-        <img class="logo" src="./assets/logo.png" alt="logo" />
-        <p>Tax Clarity</p>
-      </div>
+      <div class="head-wrapper">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" />
+          <p>Tax Clarity</p>
+        </div>
 
-      <button class="profile-btn">My Profile</button>
+        <div class="left-links">
+          <a href="#">How it works</a>
+          <a href="#">2026 Reforms</a>
+          <button class="get-started">Get Started</button>
+        </div>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container">
-      <!-- Step info -->
-      <section class="progress-bar">
-        <div class="step-desc">
-          <p>Step 3 0f 3</p>
-          <p>40%</p>
-        </div>
+    <main class="hero-section">
+      <div class="first-hero-container">
+        <span class="badge">
+          <span class="circle-dot"></span>
+          <p>Nigeria Tax 2026</p>
+        </span>
 
-        <div class="progress-container">
-          <div class="progress-green"></div>
-        </div>
+        <h1>
+          Confused about the <br />
+          2026 Tax Reforms?
+        </h1>
 
-        <p class="step-type">Almost there!, Your registration status is key.</p>
-      </section>
-
-      <!-- Title -->
-      <section class="question-centered">
-        <h2>Is your business registered?</h2>
-        <p class="subtitle">
-          Your registration status with the Corporate Affairs Commission (CAC)
-          <br />
-          determines your specific tax obligations under the 2026 Tax Clarity
-          Act.
+        <p class="hero-text">
+          Find out how the new tax rules apply to you — in simple language.
+          Navigate the new landscape for freelancers and small business owners
+          with confidence.
         </p>
-      </section>
 
-      <section class="select-options">
-        <!-- Options -->
-        <div class="option selected" data-option="registered">
-          <div class="radio"></div>
-          <div class="option-content">
-            <div class="option-title">Yes, it’s registered</div>
-            <div class="option-desc">
-              I have a CAC registration number (RC, BN, or IT).
-            </div>
+        <div class="cta-section">
+          <button class="get-started cta">Get Started</button>
+          <div class="trust-writeup">
+            <img
+              src="./assets/design-check.png"
+              width="20px"
+              height="'20px"
+              alt="check icon"
+            />
+            <p>Official 2026 Guidelines Integrated</p>
           </div>
         </div>
-
-        <div class="option" data-option="not-registered">
-          <div class="radio"></div>
-          <div class="option-content">
-            <div class="option-title">No, it’s not registered</div>
-            <div class="option-desc">
-              I operate as an individual freelancer or unregistered entity.
-            </div>
-          </div>
-        </div>
-
-        <div class="option" data-option="unsure">
-          <div class="radio"></div>
-          <div class="option-content">
-            <div class="option-title">I’m not sure</div>
-            <div class="option-desc">
-              I need help identifying my legal status or structure.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Helper text -->
-      <div class="helper">
-        <img src="./assets/green-info.png" alt="info icon" />
-        <p>
-          <b>Why are we asking?</b> Registered businesses may qualify for
-          specific tax credits or simplified filing structures introduced in the
-          2026 reform.
-        </p>
       </div>
 
-      <div class="action-btns">
-        <button class="continue-btn">Continue</button>
-        <button class="back-btn">Go back</button>
+      <div class="image-section">
+        <div>
+          <img src="./assets/hero-image.png" alt="hero image" />
+        </div>
       </div>
     </main>
 
-    <!-- JavaScript file -->
-    <script src="app.js"></script>
+    <footer class="landing-page-footer">
+        <div class="landing-page-footer-flex">
+            <div class="logo footer-logo">
+                <img src="./assets/logo.png" alt="logo" />
+                <p>Tax Clarity Assistant</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Support</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+
+            <div>
+                <p>© 2024 Nigeria Tax Clarity Assistant. Navigating the 2026 Reforms together.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>

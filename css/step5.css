@@ -1,0 +1,146 @@
+.container {
+  max-width: 1311px;
+  margin-top: 58px;
+  padding: 0;
+}
+
+.container > h2:first-child {
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.yellow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* place-items: center center; */
+  background-color: #fac71e;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.yellow-bg img {
+  width: 50px;
+  height: 50px;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 62px;
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  padding: 55px 62px;
+  background-color: #e4efeb;
+
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.more-info h4 {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.more-info p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.81);
+  margin-top: 16px;
+}
+
+.header-card {
+  margin-top: 48px;
+  box-shadow: 0px 8px 24px 0px #00000014;
+}
+
+.details-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.left-container,
+.right-container {
+  box-shadow: 0px 8px 24px 0px #00000014;
+  background-color: white;
+  align-content: stretch;
+  padding: 34px 44px;
+  border-radius: 16px;
+  height: 680px;
+}
+
+.left-container div,
+.right-container div {
+  display: flex;
+  align-items: start;
+  gap: 33px;
+  margin-top: 56px;
+}
+
+.gray-wrapper {
+  width: 36px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d978;
+  border-radius: 9999px;
+}
+
+.gray-wrapper img {
+  width: 18px;
+  height: 18px;
+}
+
+.left-container .heading,
+.right-container .heading {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.left-container p,
+.right-container p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+
+.action-section {
+    margin: auto;
+    margin-top: 75px;
+    max-width: 846px;
+}
+
+.help {
+    margin-top: 44px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #C8C8C8;
+    margin-top: 120px;
+    padding: 30px;
+}
+
+footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}

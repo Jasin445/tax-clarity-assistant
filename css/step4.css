@@ -86,14 +86,21 @@
   font-size: 18px;
 }
 
+.progress-green{
+  width: 60%;
+  height: 11px;
+  background-color: var(--primary);
+  border-radius: 64px;
+}
+
 .step.done {
   background: var(--bg-light);
-  /* color: var(--primary); */
+  color: var(--primary);
 }
 
 .step.pending {
   background: var(--bg-pending);
-  color: var(--text-muted);
+  /* color: var(--text-muted); */
 }
 
 .icon {
